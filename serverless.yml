@@ -44,16 +44,16 @@ custom:
   slack_client_scopes: "bot commands incoming-webhook"
 
   # Verification token
-  slack_verification_token: ${file(../secrets.yml):slack_verification_token}
+  slack_verification_token: ${file(secrets.yml):slack_verification_token}
   
   # Client ID - quotes required
-  slack_client_id: ${file(../secrets.yml):slack_client_id}
+  slack_client_id: ${file(secrets.yml):slack_client_id}
   
   # Client Secret - quotes required
-  slack_client_secret: ${file(../secrets.yml):slack_client_secret}
+  slack_client_secret: ${file(secrets.yml):slack_client_secret}
 
   # ZeroCater Company Token
-  zerocater_token: ${file(../secrets.yml):zerocater_token}
+  zerocater_token: ${file(secrets.yml):zerocater_token}
   
 
 provider:
