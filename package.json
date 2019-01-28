@@ -23,6 +23,7 @@
     "url": "https://github.com/johnagan/serverless-slack-app/issues"
   },
   "dependencies": {
+    "serverless": "^1.36.3",
     "serverless-slack": "^1.0.25",
     "zerocater": "~/Code/zerocater-node"
   }
