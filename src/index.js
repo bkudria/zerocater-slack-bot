@@ -39,6 +39,7 @@ slack.on('lunch_here', (msg, bot) => {
       .then(function(result) {
         const lunch = result[0];
         const lunch_url =  `https://app.zerocater.com/m/${process.env.ZEROCATER_TOKEN}/${lunch.id}`;
+        lunch.vendor_image_url = lunch.vendor_image_url || "";
         let message = {
           attachments: [{
             fallback: `${lunch.name} <!here>! ${lunch_url} \n*${lunch.vendor_name}* \n_${lunch.vendor_description}_`,
